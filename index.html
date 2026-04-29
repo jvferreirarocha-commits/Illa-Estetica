@@ -12,7 +12,7 @@
     <script>
       document.documentElement.classList.add("has-js");
     </script>
-    <link rel="stylesheet" href="styles.css?v=founders-13" />
+    <link rel="stylesheet" href="styles.css?v=gallery-captions-1" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -109,24 +109,132 @@
         </div>
 
         <div class="services-grid reveal" data-services>
-          <article data-category="facial">Limpeza de pele</article>
-          <article data-category="tech facial">Luz intensa pulsada</article>
-          <article data-category="tech facial">Laser ablativo</article>
-          <article data-category="tech facial">Laser fracionado</article>
-          <article data-category="tech body">Ultrassom microfocado</article>
-          <article data-category="facial tech">Microagulhamento</article>
-          <article data-category="tech facial">Laser acroma</article>
-          <article data-category="tech care">Laser de baixa potência</article>
-          <article data-category="tech body">Radiofrequência</article>
-          <article data-category="tech body">Depilação a laser</article>
-          <article data-category="body">Tratamento para estrias</article>
-          <article data-category="body">Tratamento para celulite</article>
-          <article data-category="body">Tratamento para gordura</article>
-          <article data-category="care tech">Tratamento capilar</article>
-          <article data-category="care body">Drenagem linfática</article>
-          <article data-category="care body">Drenagem linfática gestante</article>
-          <article data-category="care body">Tapping</article>
-          <article data-category="facial tech">Tratamento para manchas nas mãos</article>
+          <article data-category="facial">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-limpeza">
+              <span>Limpeza de pele</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-limpeza" class="service-description">Remove cravos, impurezas, oleosidade e células mortas, deixando a pele mais limpa e renovada.</p>
+          </article>
+          <article data-category="tech facial">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-luz">
+              <span>Luz intensa pulsada</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-luz" class="service-description">Ajuda a clarear manchas, melhorar vermelhidão, poros e textura da pele.</p>
+          </article>
+          <article data-category="tech facial">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-laser-ablativo">
+              <span>Laser ablativo</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-laser-ablativo" class="service-description">Promove renovação intensa da pele, ajudando em rugas, cicatrizes e textura irregular.</p>
+          </article>
+          <article data-category="tech facial">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-laser-fracionado">
+              <span>Laser fracionado</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-laser-fracionado" class="service-description">Melhora cicatrizes, poros, manchas e sinais de envelhecimento estimulando a renovação da pele.</p>
+          </article>
+          <article data-category="tech body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-ultrassom">
+              <span>Ultrassom microfocado</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-ultrassom" class="service-description">Estimula colágeno e ajuda na firmeza da pele, com efeito lifting sem cirurgia.</p>
+          </article>
+          <article data-category="facial tech">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-microagulhamento">
+              <span>Microagulhamento</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-microagulhamento" class="service-description">Estimula colágeno por meio de microperfurações, melhorando textura, manchas, cicatrizes e linhas finas.</p>
+          </article>
+          <article data-category="tech facial">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-acroma">
+              <span>Laser Acroma</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-acroma" class="service-description">Tratamento voltado para clareamento de manchas e uniformização do tom da pele.</p>
+          </article>
+          <article data-category="tech care">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-baixa-potencia">
+              <span>Laser de baixa potência</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-baixa-potencia" class="service-description">Auxilia na cicatrização, recuperação da pele, inflamações e estímulo capilar.</p>
+          </article>
+          <article data-category="tech body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-radiofrequencia">
+              <span>Radiofrequência</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-radiofrequencia" class="service-description">Aquece a pele para estimular colágeno, ajudando na flacidez e firmeza.</p>
+          </article>
+          <article data-category="tech body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-depilacao">
+              <span>Depilação a laser</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-depilacao" class="service-description">Reduz os pelos de forma progressiva e duradoura.</p>
+          </article>
+          <article data-category="body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-estrias">
+              <span>Tratamento para estrias</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-estrias" class="service-description">Melhora a aparência das estrias, estimulando a regeneração e o colágeno da pele.</p>
+          </article>
+          <article data-category="body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-celulite">
+              <span>Tratamento para celulite</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-celulite" class="service-description">Ajuda a melhorar a textura da pele, circulação e aspecto de "furinhos".</p>
+          </article>
+          <article data-category="body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-gordura">
+              <span>Tratamento para gordura</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-gordura" class="service-description">Auxilia na redução de gordura localizada e melhora do contorno corporal.</p>
+          </article>
+          <article data-category="care tech">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-capilar">
+              <span>Tratamento capilar</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-capilar" class="service-description">Estimula o couro cabeludo, fortalece os fios e auxilia no crescimento saudável do cabelo.</p>
+          </article>
+          <article data-category="care body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-drenagem">
+              <span>Drenagem linfática</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-drenagem" class="service-description">Massagem que ajuda a reduzir inchaço, retenção de líquidos e melhora a circulação.</p>
+          </article>
+          <article data-category="care body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-gestante">
+              <span>Drenagem linfática gestante</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-gestante" class="service-description">Técnica suave para gestantes, ajudando a aliviar inchaço e sensação de peso nas pernas.</p>
+          </article>
+          <article data-category="care body">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-tapping">
+              <span>Tapping</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-tapping" class="service-description">Aplicação de fitas terapêuticas para auxiliar na drenagem, sustentação da pele e redução de inchaços.</p>
+          </article>
+          <article data-category="facial tech">
+            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-maos">
+              <span>Tratamento para manchas nas mãos</span>
+              <span class="service-icon" aria-hidden="true"></span>
+            </button>
+            <p id="service-maos" class="service-description">Clareia manchas e melhora a aparência da pele das mãos, deixando o tom mais uniforme.</p>
+          </article>
         </div>
       </section>
 
@@ -141,11 +249,11 @@
         </figure>
         <figure class="gallery-tile reveal">
           <img src="assets/procedure-3.jpg" alt="Tecnologia estética aplicada em procedimento corporal" />
-          <figcaption>Tecnologias avançadas</figcaption>
+          <figcaption>Relaxamento e Bem-Estar</figcaption>
         </figure>
         <figure class="gallery-tile reveal">
           <img src="assets/procedure-4.jpg" alt="Equipamento utilizado em tratamento estético" />
-          <figcaption>Segurança em cada etapa</figcaption>
+          <figcaption>Tecnologias avançadas</figcaption>
         </figure>
         <figure class="gallery-tile reveal">
           <img src="assets/procedure-5.jpg" alt="Procedimento facial com tecnologia a laser na Illa Estética" />
@@ -259,6 +367,14 @@
                 <p>“Muito queridas e fazem um excelente trabalho.”</p>
                 <strong>Vitoria</strong>
               </article>
+              <article class="testimonial">
+                <p>“Na Illa, me sinto acolhida em um ambiente lindo e leve. A Paola e a Idamara cuidam de mim com delicadeza, verdade e atenção, trazendo resultados maravilhosos e fortalecendo minha autoestima e confiança.”</p>
+                <strong>Marli</strong>
+              </article>
+              <article class="testimonial">
+                <p>“Quando penso na Illa, lembro de profissionalismo, carinho e amor pelo que fazem. Sempre cuidaram de mim com responsabilidade, não só da estética, mas também do meu emocional.”</p>
+                <strong>Naty</strong>
+              </article>
             </div>
           </div>
           <button class="carousel-btn next" type="button" aria-label="Próximo depoimento" data-next>
@@ -297,6 +413,6 @@
       <a href="https://www.instagram.com/illa.estetica/" target="_blank" rel="noreferrer">Instagram</a>
     </footer>
 
-    <script src="script.js?v=founders-13" defer></script>
+    <script src="script.js?v=gallery-captions-1" defer></script>
   </body>
 </html>

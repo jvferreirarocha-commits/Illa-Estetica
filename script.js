@@ -30,6 +30,24 @@
   const serviceButtons = document.querySelectorAll(".service-filter");
   const services = document.querySelectorAll("[data-services] article");
 
+  const closeService = (service) => {
+    service.classList.remove("is-open");
+    service.querySelector(".service-card")?.setAttribute("aria-expanded", "false");
+  };
+
+  services.forEach((service) => {
+    const card = service.querySelector(".service-card");
+
+    card?.addEventListener("click", () => {
+      const shouldOpen = !service.classList.contains("is-open");
+      services.forEach((item) => {
+        if (item !== service) closeService(item);
+      });
+      service.classList.toggle("is-open", shouldOpen);
+      card.setAttribute("aria-expanded", String(shouldOpen));
+    });
+  });
+
   serviceButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.dataset.filter || "all";
@@ -41,6 +59,7 @@
         const categories = service.dataset.category?.split(" ") || [];
         const shouldShow = filter === "all" || categories.includes(filter);
         service.classList.toggle("is-hidden", !shouldShow);
+        if (!shouldShow) closeService(service);
       });
     });
   });
