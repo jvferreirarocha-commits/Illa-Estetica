@@ -202,7 +202,7 @@ button {
 
 .hero-media {
   background-image: url("assets/founders-hero.jpg");
-  background-position: center 22%;
+  background-position: center 8%;
   background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1.02);
@@ -1017,7 +1017,7 @@ button {
   }
 
   .hero-media {
-    background-position: 54% 24%;
+    background-position: 54% 10%;
   }
 
   .hero-overlay {

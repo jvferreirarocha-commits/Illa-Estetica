@@ -90,20 +90,13 @@
     const prev = root.querySelector("[data-prev]");
     const next = root.querySelector("[data-next]");
     const dotsWrap = root.querySelector(".carousel-dots");
+    const autoplayDelay = 2000;
     let index = 0;
     let startX = 0;
     let deltaX = 0;
+    let autoplayTimer = 0;
 
     if (!track || slides.length === 0 || !dotsWrap) return;
-
-    const dots = slides.map((_, dotIndex) => {
-      const dot = document.createElement("button");
-      dot.type = "button";
-      dot.setAttribute("aria-label", `Ir para item ${dotIndex + 1}`);
-      dot.addEventListener("click", () => goTo(dotIndex));
-      dotsWrap.appendChild(dot);
-      return dot;
-    });
 
     const update = () => {
       track.style.transform = `translateX(-${index * 100}%)`;
@@ -118,8 +111,33 @@
       update();
     };
 
-    prev?.addEventListener("click", () => goTo(index - 1));
-    next?.addEventListener("click", () => goTo(index + 1));
+    const restartAutoplay = () => {
+      window.clearInterval(autoplayTimer);
+      if (slides.length < 2) return;
+      autoplayTimer = window.setInterval(() => goTo(index + 1), autoplayDelay);
+    };
+
+    const dots = slides.map((_, dotIndex) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Ir para item ${dotIndex + 1}`);
+      dot.addEventListener("click", () => {
+        goTo(dotIndex);
+        restartAutoplay();
+      });
+      dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    prev?.addEventListener("click", () => {
+      goTo(index - 1);
+      restartAutoplay();
+    });
+
+    next?.addEventListener("click", () => {
+      goTo(index + 1);
+      restartAutoplay();
+    });
 
     track.addEventListener(
       "touchstart",
@@ -141,13 +159,62 @@
     track.addEventListener("touchend", () => {
       if (Math.abs(deltaX) > 48) {
         goTo(index + (deltaX < 0 ? 1 : -1));
+        restartAutoplay();
       }
       startX = 0;
       deltaX = 0;
     });
 
     update();
+    restartAutoplay();
   };
 
   document.querySelectorAll("[data-carousel]").forEach(setupCarousel);
+
+  const statNumbers = document.querySelectorAll(".intro-strip strong[data-count]");
+
+  const animateStat = (stat) => {
+    if (stat.dataset.animated === "true") return;
+    stat.dataset.animated = "true";
+
+    const target = Number(stat.dataset.count || "0");
+    const prefix = stat.dataset.prefix || "";
+    const suffix = stat.dataset.suffix || "";
+    const duration = 2000;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = Math.round(target * eased);
+      stat.textContent = `${prefix}${value}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        stat.textContent = `${prefix}${target}${suffix}`;
+      }
+    };
+
+    requestAnimationFrame(tick);
+  };
+
+  if ("IntersectionObserver" in window) {
+    const statObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateStat(entry.target);
+            statObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    statNumbers.forEach((stat) => statObserver.observe(stat));
+  } else {
+    statNumbers.forEach(animateStat);
+  }
+
 })();
