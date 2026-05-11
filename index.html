@@ -5,414 +5,711 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Illa Estética e Bem-Estar: clínica de estética em Curitiba com tratamentos faciais, corporais, tecnologias avançadas e atendimento acolhedor."
+      content="Consultório Dra. Karina Cichocki: odontologia especializada, atendimento humanizado e tratamentos para cuidar do seu sorriso."
     />
-    <title>Illa Estética e Bem-Estar</title>
-    <link rel="icon" href="assets/logo-symbol.jpg" />
-    <script>
-      document.documentElement.classList.add("has-js");
-    </script>
-    <link rel="stylesheet" href="styles.css?v=hero-full-face-1" />
+    <title>Consultório Dra. Karina Cichocki | Odontologia Especializada</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand brand-full" href="#inicio" aria-label="Illa Estética e Bem-Estar">
-        <img src="assets/logo-horizontal-transparent.png" alt="Illa Estética e Bem-Estar" />
+    <header class="site-header" id="topo">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img
+          class="brand-logo"
+          src="assets/images/logo-dra-karina-white.png"
+          alt="Dra. Karina Cichocki odontologia especializada"
+        />
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menu</span>
       </button>
 
-      <nav class="main-nav" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
-        <a href="#procedimentos">Procedimentos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#clinica">Clínica</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a class="nav-cta" href="https://wa.me/message/FKBYPUPQPWVIK1">
+        <a href="#servicos">Serviços</a>
+        <a href="#por-que-escolher">Dra. Karina</a>
+        <a href="#consultorio">Consultório</a>
+        <a href="#depoimentos">Feedbacks</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
           Agendar
         </a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="inicio" aria-label="Illa Estética e Bem-Estar">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content reveal is-visible">
-          <p class="eyebrow">Estética científica, acolhimento e bem-estar</p>
-          <h1>Illa Estética</h1>
-          <p class="hero-copy">Cuidar de você nunca foi tão essencial!</p>
-          <div class="hero-actions" aria-label="Contatos principais">
-            <a class="button primary" href="https://wa.me/message/FKBYPUPQPWVIK1">
-              WhatsApp
+      <section class="hero" id="inicio" aria-label="Apresentação do consultório">
+        <img
+          src="assets/images/hero-consultorio.jpg"
+          alt="Dra. Karina Cichocki no consultório"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-statement">Você merece sorrir</p>
+          <p class="hero-copy">
+            Cuidado odontológico com estética, precisão e acolhimento em cada etapa do tratamento.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+              Quero agendar uma consulta
             </a>
-            <a class="button secondary" href="https://www.instagram.com/illa.estetica/" target="_blank" rel="noreferrer">
+            <a class="button button-ghost" href="https://www.instagram.com/dra.karinacichocki/" target="_blank" rel="noopener">
               Instagram
             </a>
           </div>
         </div>
       </section>
 
-      <section class="intro-strip" aria-label="Diferenciais">
-        <div>
-          <strong data-count="18" data-suffix="+">0+</strong>
-          <span>procedimentos estéticos</span>
-        </div>
-        <div>
-          <strong data-count="500" data-prefix="+">+0</strong>
-          <span>procedimentos realizados</span>
-        </div>
-        <div>
-          <strong data-count="360" data-suffix="°">0°</strong>
-          <span>cuidado, acompanhamento e bem-estar</span>
-        </div>
-      </section>
-
-      <section class="section about-section" id="sobre">
-        <div class="about-grid">
-          <div class="section-heading about-heading reveal">
-            <p class="eyebrow">Quem cuida de você</p>
-            <h2>
-              <span>Idamara Hekiel</span>
-              <span>Paolla Kleina</span>
-            </h2>
-          </div>
-          <div class="about-copy reveal">
-            <p>
-              Somos duas amigas que nos conhecemos na faculdade, unidas por um propósito em comum: cuidar da beleza e do bem-estar das pessoas com embasamento científico, ética e responsabilidade.
-            </p>
-            <p>
-              Ao longo dos anos, transformamos nossa amizade em parceria profissional e realizamos o sonho de criar uma clínica onde cada detalhe fosse pensado para acolher, transformar e valorizar a autoestima de quem nos procura.
-            </p>
-          </div>
-          <div class="about-visual founders-card reveal" aria-label="Idamara Hekiel e Paolla Kleina">
-            <img src="assets/founders-about.jpg" alt="Idamara Hekiel e Paolla Kleina, fundadoras da Illa Estética" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section services-section" id="procedimentos">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Procedimentos</p>
-          <h2>Tratamentos pensados para cada fase da sua pele e do seu corpo</h2>
-        </div>
-
-        <div class="service-controls reveal" aria-label="Categorias de procedimentos">
-          <button class="service-filter active" type="button" data-filter="all">Todos</button>
-          <button class="service-filter" type="button" data-filter="facial">Facial</button>
-          <button class="service-filter" type="button" data-filter="tech">Tecnologia</button>
-          <button class="service-filter" type="button" data-filter="body">Corporal</button>
-          <button class="service-filter" type="button" data-filter="care">Bem-estar</button>
-        </div>
-
-        <div class="services-grid reveal" data-services>
-          <article data-category="facial">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-limpeza">
-              <span>Limpeza de pele</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-limpeza" class="service-description">Remove cravos, impurezas, oleosidade e células mortas, deixando a pele mais limpa e renovada.</p>
-          </article>
-          <article data-category="tech facial">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-luz">
-              <span>Luz intensa pulsada</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-luz" class="service-description">Ajuda a clarear manchas, melhorar vermelhidão, poros e textura da pele.</p>
-          </article>
-          <article data-category="tech facial">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-laser-ablativo">
-              <span>Laser ablativo</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-laser-ablativo" class="service-description">Promove renovação intensa da pele, ajudando em rugas, cicatrizes e textura irregular.</p>
-          </article>
-          <article data-category="tech facial">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-laser-fracionado">
-              <span>Laser fracionado</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-laser-fracionado" class="service-description">Melhora cicatrizes, poros, manchas e sinais de envelhecimento estimulando a renovação da pele.</p>
-          </article>
-          <article data-category="tech body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-ultrassom">
-              <span>Ultrassom microfocado</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-ultrassom" class="service-description">Estimula colágeno e ajuda na firmeza da pele, com efeito lifting sem cirurgia.</p>
-          </article>
-          <article data-category="facial tech">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-microagulhamento">
-              <span>Microagulhamento</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-microagulhamento" class="service-description">Estimula colágeno por meio de microperfurações, melhorando textura, manchas, cicatrizes e linhas finas.</p>
-          </article>
-          <article data-category="tech facial">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-acroma">
-              <span>Laser Acroma</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-acroma" class="service-description">Tratamento voltado para clareamento de manchas e uniformização do tom da pele.</p>
-          </article>
-          <article data-category="tech care">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-baixa-potencia">
-              <span>Laser de baixa potência</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-baixa-potencia" class="service-description">Auxilia na cicatrização, recuperação da pele, inflamações e estímulo capilar.</p>
-          </article>
-          <article data-category="tech body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-radiofrequencia">
-              <span>Radiofrequência</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-radiofrequencia" class="service-description">Aquece a pele para estimular colágeno, ajudando na flacidez e firmeza.</p>
-          </article>
-          <article data-category="tech body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-depilacao">
-              <span>Depilação a laser</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-depilacao" class="service-description">Reduz os pelos de forma progressiva e duradoura.</p>
-          </article>
-          <article data-category="body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-estrias">
-              <span>Tratamento para estrias</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-estrias" class="service-description">Melhora a aparência das estrias, estimulando a regeneração e o colágeno da pele.</p>
-          </article>
-          <article data-category="body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-celulite">
-              <span>Tratamento para celulite</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-celulite" class="service-description">Ajuda a melhorar a textura da pele, circulação e aspecto de "furinhos".</p>
-          </article>
-          <article data-category="body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-gordura">
-              <span>Tratamento para gordura</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-gordura" class="service-description">Auxilia na redução de gordura localizada e melhora do contorno corporal.</p>
-          </article>
-          <article data-category="care tech">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-capilar">
-              <span>Tratamento capilar</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-capilar" class="service-description">Estimula o couro cabeludo, fortalece os fios e auxilia no crescimento saudável do cabelo.</p>
-          </article>
-          <article data-category="care body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-drenagem">
-              <span>Drenagem linfática</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-drenagem" class="service-description">Massagem que ajuda a reduzir inchaço, retenção de líquidos e melhora a circulação.</p>
-          </article>
-          <article data-category="care body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-gestante">
-              <span>Drenagem linfática gestante</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-gestante" class="service-description">Técnica suave para gestantes, ajudando a aliviar inchaço e sensação de peso nas pernas.</p>
-          </article>
-          <article data-category="care body">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-tapping">
-              <span>Tapping</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-tapping" class="service-description">Aplicação de fitas terapêuticas para auxiliar na drenagem, sustentação da pele e redução de inchaços.</p>
-          </article>
-          <article data-category="facial tech">
-            <button class="service-card" type="button" aria-expanded="false" aria-controls="service-maos">
-              <span>Tratamento para manchas nas mãos</span>
-              <span class="service-icon" aria-hidden="true"></span>
-            </button>
-            <p id="service-maos" class="service-description">Clareia manchas e melhora a aparência da pele das mãos, deixando o tom mais uniforme.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="procedure-gallery" aria-label="Procedimentos na Illa">
-        <figure class="gallery-tile large reveal">
-          <img src="assets/procedure-1.jpg" alt="Drenagem linfática realizada na clínica" />
-          <figcaption>Drenagem e cuidado corporal</figcaption>
-        </figure>
-        <figure class="gallery-tile reveal">
-          <img src="assets/procedure-2.jpg" alt="Procedimento estético facial em ambiente clínico" />
-          <figcaption>Protocolos personalizados</figcaption>
-        </figure>
-        <figure class="gallery-tile reveal">
-          <img src="assets/procedure-3.jpg" alt="Tecnologia estética aplicada em procedimento corporal" />
-          <figcaption>Relaxamento e Bem-Estar</figcaption>
-        </figure>
-        <figure class="gallery-tile reveal">
-          <img src="assets/procedure-4.jpg" alt="Equipamento utilizado em tratamento estético" />
-          <figcaption>Tecnologias avançadas</figcaption>
-        </figure>
-        <figure class="gallery-tile reveal">
-          <img src="assets/procedure-5.jpg" alt="Procedimento facial com tecnologia a laser na Illa Estética" />
-          <figcaption>Laser de Alta Precisão</figcaption>
-        </figure>
-      </section>
-
-      <section class="section results-section" id="resultados">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Resultados</p>
-          <h2>Antes e depois com acompanhamento próximo</h2>
-        </div>
-
-        <div class="carousel shell reveal" data-carousel="results">
-          <button class="carousel-btn prev" type="button" aria-label="Resultado anterior" data-prev>
-            <span aria-hidden="true"></span>
-          </button>
-          <div class="carousel-viewport">
-            <div class="carousel-track">
-              <figure class="result-slide">
-                <img src="assets/result-1.jpg" alt="Antes e depois de tratamento na região do pescoço" />
-                <figcaption>Firmeza e contorno</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-2.jpg" alt="Antes e depois de tratamento corporal abdominal" />
-                <figcaption>Tratamento corporal</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-3.jpg" alt="Antes e depois de tratamento facial" />
-                <figcaption>Revitalização facial</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-4.jpg" alt="Antes e depois de tratamento para estrias" />
-                <figcaption>Tratamento para estrias</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-5.jpg" alt="Antes e depois de tratamento facial na região do rosto e pescoço" />
-                <figcaption>Renovação facial</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-6.jpg" alt="Antes e depois de tratamento facial para textura e firmeza" />
-                <figcaption>Firmeza e textura</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img class="result-contain" src="assets/result-7.jpg" alt="Antes e depois de tratamento para manchas nas mãos" />
-                <figcaption>Manchas nas mãos</figcaption>
-              </figure>
-              <figure class="result-slide">
-                <img src="assets/result-8.jpg" alt="Antes e depois de tratamento facial com acompanhamento estético" />
-                <figcaption>Rejuvenescimento facial</figcaption>
-              </figure>
+      <section class="about section" id="sobre">
+        <div class="section-shell about-grid">
+          <div class="about-copy reveal-left" data-reveal>
+            <p class="section-kicker">Sobre o consultório</p>
+            <h2>Um espaço pensado para cuidar do seu sorriso com tranquilidade.</h2>
+            <div class="editable-copy">
+              <p>
+                Olá, sou a Dra. Karina Cichocki, Cirurgiã-Dentista, Especialista e Mestre em
+                Ortodontia e trabalho com ortopedia funcional dos maxilares. Realizo tratamentos
+                ortodônticos há mais de 30 anos em Curitiba. Trabalhamos na clínica com aparelhos
+                ortodônticos metálicos, estéticos de porcelana, safira, autoligado, alinhadores e
+                aparelhos ortopedicos funcionais.
+              </p>
+              <p>
+                Contamos também com uma ampla estrutura e parceria de profissionais de diversas
+                especialidades da odontologia em um mesmo local, buscando trabalhar em conjunto para
+                um tratamento eficaz, humanizado e personalizado para cada paciente.
+              </p>
+              <p>
+                Será um prazer receber você em nossa clínica.
+              </p>
             </div>
-          </div>
-          <button class="carousel-btn next" type="button" aria-label="Próximo resultado" data-next>
-            <span aria-hidden="true"></span>
-          </button>
-          <div class="carousel-dots" aria-label="Selecionar resultado"></div>
-        </div>
-        <p class="result-note reveal">Resultados variam de acordo com avaliação individual e plano de tratamento.</p>
-      </section>
-
-      <section class="section clinic-section" id="clinica">
-        <div class="section-heading reveal">
-          <p class="eyebrow">A clínica</p>
-          <h2>Um espaço claro, acolhedor e preparado para receber você</h2>
-        </div>
-        <div class="clinic-grid reveal">
-          <figure>
-            <img src="assets/clinic-1.jpg" alt="Sala de atendimento da Illa Estética" />
-          </figure>
-          <figure>
-            <img src="assets/clinic-2.jpg" alt="Ambiente interno da clínica com maca e espelho" />
-          </figure>
-          <figure>
-            <img src="assets/clinic-3.jpg" alt="Consultório com iluminação aconchegante" />
-          </figure>
-          <figure>
-            <img src="assets/clinic-4.jpg" alt="Sala de procedimentos da clínica" />
-          </figure>
-          <figure>
-            <img src="assets/clinic-5.jpg" alt="Bandeja de acolhimento da Illa Estética com frutas e água" />
-          </figure>
-        </div>
-      </section>
-
-      <section class="section testimonials-section" id="depoimentos">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Depoimentos</p>
-          <h2>O cuidado aparece nos detalhes</h2>
-        </div>
-
-        <div class="testimonial-carousel reveal" data-carousel="testimonials">
-          <button class="carousel-btn prev" type="button" aria-label="Depoimento anterior" data-prev>
-            <span aria-hidden="true"></span>
-          </button>
-          <div class="testimonial-viewport">
-            <div class="testimonial-track">
-              <article class="testimonial">
-                <p>“Atendimento impecável e altamente técnico.”</p>
-                <strong>Matheus</strong>
-              </article>
-              <article class="testimonial">
-                <p>“Não é apenas um procedimento, é um acompanhamento completo. Me senti cuidada em cada etapa.”</p>
-                <strong>Luisa</strong>
-              </article>
-              <article class="testimonial">
-                <p>“Excelente atendimento.”</p>
-                <strong>Rodrigo</strong>
-              </article>
-              <article class="testimonial">
-                <p>“Muito queridas e fazem um excelente trabalho.”</p>
-                <strong>Vitoria</strong>
-              </article>
-              <article class="testimonial">
-                <p>“Na Illa, me sinto acolhida em um ambiente lindo e leve. A Paola e a Idamara cuidam de mim com delicadeza, verdade e atenção, trazendo resultados maravilhosos e fortalecendo minha autoestima e confiança.”</p>
-                <strong>Marli</strong>
-              </article>
-              <article class="testimonial">
-                <p>“Quando penso na Illa, lembro de profissionalismo, carinho e amor pelo que fazem. Sempre cuidaram de mim com responsabilidade, não só da estética, mas também do meu emocional.”</p>
-                <strong>Naty</strong>
-              </article>
-            </div>
-          </div>
-          <button class="carousel-btn next" type="button" aria-label="Próximo depoimento" data-next>
-            <span aria-hidden="true"></span>
-          </button>
-          <div class="carousel-dots" aria-label="Selecionar depoimento"></div>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contato">
-        <div class="contact-content reveal">
-          <p class="eyebrow">Agende sua avaliação</p>
-          <h2>Cuidar de você pode começar hoje.</h2>
-          <p>
-            Fale com a Illa pelo WhatsApp ou acompanhe os protocolos, bastidores e resultados pelo Instagram.
-          </p>
-          <div class="contact-actions">
-            <a class="button primary" href="https://wa.me/message/FKBYPUPQPWVIK1">
-              (41) 99940-8964
+            <a class="button button-primary" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+              Quero agendar uma consulta
             </a>
-            <a class="button dark" href="https://www.instagram.com/illa.estetica/" target="_blank" rel="noreferrer">
-              @illa.estetica
+          </div>
+
+          <figure class="about-media about-carousel reveal-right" data-reveal aria-label="Fotos da Dra. Karina no consultório">
+            <div class="about-carousel-window">
+              <div class="about-carousel-track">
+                <div class="about-slide is-active">
+                  <img
+                    src="assets/images/sobre-dra-karina.jpg"
+                    alt="Dra. Karina Cichocki na sala de espera do consultório"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-01.jpeg"
+                    alt="Dra. Karina preparando modelo odontológico"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-02.png"
+                    alt="Dra. Karina ao lado de seus certificados"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-03.png"
+                    alt="Dra. Karina no consultório odontológico"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-04.png"
+                    alt="Dra. Karina segurando fios ortodônticos"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-05.png"
+                    alt="Dra. Karina sentada na cadeira odontológica"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-06.png"
+                    alt="Dra. Karina segurando aparelhos ortodônticos coloridos"
+                  />
+                </div>
+                <div class="about-slide">
+                  <img
+                    src="assets/images/about-carousel-07.jpeg"
+                    alt="Dra. Karina durante atendimento odontológico"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="about-carousel-controls">
+              <button class="about-prev" type="button" aria-label="Foto anterior">&#8249;</button>
+              <div class="about-dots" aria-label="Selecionar foto do sobre o consultório"></div>
+              <button class="about-next" type="button" aria-label="Próxima foto">&#8250;</button>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="services section" id="servicos">
+        <div class="section-shell">
+          <div class="section-heading center" data-reveal>
+            <p class="section-kicker">Serviços realizados</p>
+            <h2>Tratamentos para saúde, função e beleza do sorriso.</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-ortodontia.jpg" alt="Modelo odontológico com aparelho ortodôntico" />
+              <div>
+                <h3>Ortodontia</h3>
+                <p>
+                  A ortodontia é a área responsável pela correção da posição dos dentes e dos ossos
+                  maxilares, contribuindo para um sorriso mais alinhado, funcional e harmonioso. O
+                  tratamento pode ser realizado com aparelho fixo, alinhadores transparentes ou
+                  ortopedia funcional dos maxilares, de acordo com a necessidade de cada paciente.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-tratamento-clinico.jpg" alt="Atendimento odontológico clínico" />
+              <div>
+                <h3>Tratamento clínico</h3>
+                <p>
+                  O tratamento clínico envolve os cuidados essenciais para manter a saúde bucal em
+                  dia, como avaliações, limpezas, restaurações e prevenção de problemas dentários. É
+                  a base para preservar dentes saudáveis, evitar complicações e garantir mais
+                  conforto no dia a dia.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-implantes.jpg" alt="Modelo de implante dentário" />
+              <div>
+                <h3>Implantes</h3>
+                <p>
+                  Os implantes dentários são uma solução moderna para substituir dentes perdidos,
+                  devolvendo estética, segurança e função mastigatória. O procedimento busca
+                  recuperar a naturalidade do sorriso e melhorar a qualidade de vida do paciente.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-odontopediatria.jpg" alt="Avaliação odontológica infantil" />
+              <div>
+                <h3>Odontologia pediátrica</h3>
+                <p>
+                  A odontologia pediátrica é voltada ao cuidado da saúde bucal de crianças,
+                  acompanhando o desenvolvimento dos dentes desde cedo. O atendimento é realizado de
+                  forma acolhedora, preventiva e educativa, ajudando a criança a criar bons hábitos
+                  para a vida toda.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-facetas.jpg" alt="Escala de tonalidades para facetas dentárias" />
+              <div>
+                <h3>Facetas</h3>
+                <p>
+                  As facetas são lâminas finas aplicadas sobre os dentes com o objetivo de melhorar a
+                  estética do sorriso. Elas podem corrigir alterações de cor, formato, tamanho e
+                  pequenas imperfeições, proporcionando um resultado mais harmônico e natural.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <img src="assets/images/service-harmonizacao.jpg" alt="Paciente em tratamento estético facial" />
+              <div>
+                <h3>Harmonização orofacial</h3>
+                <p>
+                  A harmonização orofacial reúne procedimentos estéticos que buscam equilibrar os
+                  traços do rosto e valorizar a beleza natural do paciente. Os tratamentos são
+                  planejados de forma personalizada, respeitando a anatomia facial e buscando
+                  resultados sutis e harmoniosos.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-action" data-reveal>
+            <a class="button button-primary" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+              Quero agendar uma avaliação
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why section" id="por-que-escolher">
+        <div class="section-shell">
+          <div class="section-heading center" data-reveal>
+            <p class="section-kicker">Por que escolher</p>
+            <h2>Dra. Karina</h2>
+          </div>
+
+          <div class="why-layout">
+            <div class="why-column why-column-left">
+              <article class="why-card" data-reveal>
+                <span>01</span>
+                <h3>Mãe</h3>
+                <p>
+                  Além de profissional, a Dra. Karina também é mãe de duas filhas lindas, o que torna
+                  seu olhar ainda mais humano, cuidadoso e sensível. Essa vivência se reflete em um
+                  atendimento atento, acolhedor e próximo de cada paciente.
+                </p>
+              </article>
+
+              <article class="why-card" data-reveal>
+                <span>02</span>
+                <h3>Avaliação honesta</h3>
+                <p>
+                  Cada sorriso é avaliado com responsabilidade, clareza e transparência. A Dra.
+                  Karina orienta o paciente sobre as reais necessidades do tratamento, sempre
+                  indicando o caminho mais adequado para cada caso.
+                </p>
+              </article>
+
+              <article class="why-card" data-reveal>
+                <span>03</span>
+                <h3>Estética e saúde no mesmo plano</h3>
+                <p>
+                  O objetivo é cuidar da beleza do sorriso sem deixar de lado a saúde bucal. Cada
+                  tratamento é planejado para unir harmonia, função, prevenção e bem-estar.
+                </p>
+              </article>
+            </div>
+
+            <figure class="why-photo" data-reveal>
+              <img src="assets/images/dra-karina-escolher.png" alt="Dra. Karina Cichocki" />
+            </figure>
+
+            <div class="why-column why-column-right">
+              <article class="why-card" data-reveal>
+                <span>04</span>
+                <h3>Atendimento acolhedor</h3>
+                <p>
+                  O consultório preza por uma experiência leve, humana e tranquila. Desde a primeira
+                  consulta, o paciente é recebido com atenção, escuta e explicações claras em cada
+                  etapa.
+                </p>
+              </article>
+
+              <article class="why-card" data-reveal>
+                <span>05</span>
+                <h3>Sempre inovando</h3>
+                <p>
+                  A Dra. Karina busca atualização constante para oferecer tratamentos modernos,
+                  seguros e alinhados às novas possibilidades da odontologia, sempre pensando no
+                  conforto e no melhor resultado para o paciente.
+                </p>
+              </article>
+
+              <article class="why-card" data-reveal>
+                <span>06</span>
+                <h3>Um local para todas as idades</h3>
+                <p>
+                  O consultório foi pensado para atender crianças, jovens, adultos e idosos com
+                  cuidado personalizado. Um espaço completo para acompanhar a saúde bucal da família
+                  em todas as fases da vida.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clinic section" id="consultorio">
+        <div class="section-shell clinic-layout">
+          <div class="clinic-copy reveal-left" data-reveal>
+            <p class="section-kicker">O consultório</p>
+            <h2>Conforto, cuidado e elegância em cada detalhe.</h2>
+            <p>
+              Um espaço moderno, acolhedor e preparado para atender com tranquilidade, da avaliação
+              ao procedimento. Cada ambiente foi pensado para oferecer organização, privacidade e uma
+              experiência leve durante todo o cuidado com o seu sorriso.
+            </p>
+            <a class="button button-secondary" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+              Quero agendar uma avaliação
+            </a>
+          </div>
+
+          <div class="clinic-carousel reveal-right" data-reveal aria-label="Carrossel de fotos do consultório">
+            <div class="clinic-track">
+              <figure class="clinic-slide is-active">
+                <img src="assets/images/clinica-01.jpg" alt="Recepção do consultório Dra. Karina Cichocki" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-02.jpg" alt="Sala odontológica com equipamentos" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-03.jpg" alt="Consultório odontológico preparado para atendimento" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-04.jpg" alt="Sala clínica com cadeira odontológica" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-05.jpg" alt="Área de espera do consultório" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-06.jpg" alt="Recepção e sala de espera do consultório" />
+              </figure>
+              <figure class="clinic-slide">
+                <img src="assets/images/clinica-07.jpg" alt="Área de apoio do consultório com bancada e equipamentos" />
+              </figure>
+            </div>
+
+            <div class="clinic-controls">
+              <button class="clinic-prev" type="button" aria-label="Foto anterior">‹</button>
+              <div class="clinic-dots" aria-label="Selecionar foto do consultório"></div>
+              <button class="clinic-next" type="button" aria-label="Próxima foto">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="depoimentos">
+        <div class="section-shell">
+          <div class="section-heading center" data-reveal>
+            <p class="section-kicker">Feedback de pacientes</p>
+            <h2>Experiências reais de quem confia no atendimento.</h2>
+          </div>
+        </div>
+
+        <div class="testimonial-marquee" aria-label="Carrossel de depoimentos de pacientes">
+          <div class="testimonial-track">
+            <article class="testimonial-card">
+              <p>“Muito bom os atendentes atencioso gosto muito. Super recomendo”</p>
+              <strong>José Roberto dos Santos</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Como sempre impecavel no atendimento, depois que tornaram o atendimento por horario agendado melhorou muito.”</p>
+              <strong>Alexandra</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Sempre me atende bem e com paciência não tenho reclamações.”</p>
+              <strong>Maria Josileia</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Muito bom. O tratamento é o atendimento da doutora karina!”</p>
+              <strong>Débora Elaine Santos</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Muito bacana, ótimos profissionais. Indico muito.”</p>
+              <strong>Ruan</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Fantástica!!!!!! Atenciosa tirou minhas dúvidas.”</p>
+              <strong>D.B</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Ótima profissional!”</p>
+              <strong>Luis</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Super recomendo melhor clínica de aparelho ortodôntico que já conheci. Ótimos profissionais estão de parabéns”</p>
+              <strong>Andre germinski</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“A Dra. Karina é super atenciosa e ágil no atendimento. Todos os profissionais que já me atenderam no local, foram ótimos.”</p>
+              <strong>F.M</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Atendimento maravilhosoooo profissional muito dedicada no que faz”</p>
+              <strong>Vaniele dos santos silva</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Dra. Karina é muito competente e ética. O consultório está sempre muito limpo, organizado. Profissionais nota 10!”</p>
+              <strong>Sonia O Wormes</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Dra Karina é excelente profissional. Profissional atenciosa, experiente e muito profissional. Super recomendo”</p>
+              <strong>Maria Carolina Quintanilha Rodrigues</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Excelente atendimento. Eu com certeza indico este consultório. Fui sempre muito bem atendido por todos lá.”</p>
+              <strong>Olenski Olenski</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Excelência em atendimento! Profissionais altamente capacitados! Só tenho elogios a dra Karina e sua equipe!”</p>
+              <strong>Danielle Tannous</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Dra Karina Cichocki, ótima profissional.. sempre focando na saúde e bem estar dos pacientes!!! Resultados excelentes.”</p>
+              <strong>Thais Duarte</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Uma pessoa incrivél que ama o que faz, excelente profissional e preocupada com seus pacientes.”</p>
+              <strong>Elisangela Neves</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Meu filho faz tratamento com a dra Karina, maravilhosa! Humana e sabe exatamente o que faz.”</p>
+              <strong>Ana Flavia Morselli Bordim</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Já sou paciente da clínica há algum tempo. Ótimo atendimento e confiança nos profissionais da clínica.”</p>
+              <strong>Cristina Luiz</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Melhor orto de Curitiba. Dra Karina é uma profissional sem igual, uma pessoa iluminada e carismática.”</p>
+              <strong>Faustino Faria</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>“Excelente atendimento, serviço clínico de alta qualidade, com ótimo custo benefício.”</p>
+              <strong>Lilian Ribeiro</strong>
+            </article>
+
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Muito bom os atendentes atencioso gosto muito. Super recomendo”</p>
+              <strong>José Roberto dos Santos</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Como sempre impecavel no atendimento, depois que tornaram o atendimento por horario agendado melhorou muito.”</p>
+              <strong>Alexandra</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Sempre me atende bem e com paciência não tenho reclamações.”</p>
+              <strong>Maria Josileia</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Muito bom. O tratamento é o atendimento da doutora karina!”</p>
+              <strong>Débora Elaine Santos</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Muito bacana, ótimos profissionais. Indico muito.”</p>
+              <strong>Ruan</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Fantástica!!!!!! Atenciosa tirou minhas dúvidas.”</p>
+              <strong>D.B</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Ótima profissional!”</p>
+              <strong>Luis</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Super recomendo melhor clínica de aparelho ortodôntico que já conheci. Ótimos profissionais estão de parabéns”</p>
+              <strong>Andre germinski</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“A Dra. Karina é super atenciosa e ágil no atendimento. Todos os profissionais que já me atenderam no local, foram ótimos.”</p>
+              <strong>F.M</strong>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <p>“Atendimento maravilhosoooo profissional muito dedicada no que faz”</p>
+              <strong>Vaniele dos santos silva</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="section-shell faq-grid">
+          <figure class="faq-media reveal-left" data-reveal>
+            <img src="assets/images/dra-karina-consultorio.jpg" alt="Dra. Karina Cichocki no consultório odontológico" />
+          </figure>
+
+          <div class="faq-content reveal-right" data-reveal>
+            <p class="section-kicker">FAQ</p>
+            <h2>Perguntas frequentes dos pacientes.</h2>
+            <div class="faq-list">
+              <div class="faq-item is-open">
+                <button type="button" aria-expanded="true">
+                  Com que frequência devo fazer limpeza dental?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    A limpeza dental deve ser feita regularmente, geralmente a cada 6 meses, mas esse
+                    intervalo pode variar conforme a saúde bucal de cada paciente. Em alguns casos,
+                    como maior acúmulo de tártaro, gengivite ou uso de aparelho, o acompanhamento
+                    pode precisar ser mais frequente.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Sensibilidade nos dentes tem tratamento?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Sim. A sensibilidade pode estar relacionada a desgaste do esmalte, retração
+                    gengival, cáries, trincas ou outros fatores. O ideal é realizar uma avaliação
+                    para identificar a causa e indicar o tratamento mais adequado.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  O que acontece se eu não tratar uma cárie?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Quando não tratada, a cárie pode aumentar, atingir camadas mais profundas do
+                    dente e causar dor, infecção ou até necessidade de tratamento de canal. Por isso,
+                    quanto antes for identificada e tratada, mais simples tende a ser o cuidado.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Implante dentário dói?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    O procedimento é realizado com anestesia e planejamento adequado, buscando
+                    oferecer segurança e conforto ao paciente. Após a cirurgia, pode haver um
+                    desconforto natural no período de recuperação, normalmente controlado com os
+                    cuidados e orientações do dentista.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Qualquer pessoa pode fazer implante?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Nem todos os pacientes estão automaticamente aptos ao implante. É necessário
+                    avaliar a saúde bucal, a estrutura óssea, a gengiva e também condições gerais de
+                    saúde para indicar se o implante é a melhor opção.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Com quantos anos a criança deve ir ao dentista?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    O ideal é que a criança vá ao dentista ainda nos primeiros anos de vida, de
+                    preferência quando os primeiros dentinhos começarem a nascer. Esse acompanhamento
+                    ajuda na prevenção e na criação de bons hábitos desde cedo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Dente de leite precisa tratar?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Sim. Mesmo sendo temporário, o dente de leite tem papel importante na mastigação,
+                    fala, estética e no espaço para os dentes permanentes. Quando não tratado, pode
+                    causar dor, infecções e prejudicar a saúde bucal da criança.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Facetas desgastam os dentes?
+                  <span></span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Depende de cada caso. Em algumas situações, o desgaste pode ser mínimo ou até
+                    desnecessário, enquanto em outras pode ser preciso preparar levemente a superfície
+                    do dente. O planejamento individual é essencial para um resultado bonito e seguro.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a class="button button-primary" href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+              Quero agendar uma avaliação
             </a>
           </div>
         </div>
       </section>
     </main>
 
-    <a class="floating-whatsapp" href="https://wa.me/message/FKBYPUPQPWVIK1" aria-label="Abrir WhatsApp da Illa Estética">
-      <span>WhatsApp</span>
-    </a>
+    <footer class="site-footer" id="contato">
+      <div class="section-shell contact-grid">
+        <div class="contact-content" data-reveal>
+          <a class="brand footer-brand" href="#inicio" aria-label="Voltar ao início">
+            <img
+              class="brand-logo footer-logo"
+              src="assets/images/logo-dra-karina-white.png"
+              alt="Dra. Karina Cichocki odontologia especializada"
+            />
+          </a>
 
-    <footer class="site-footer">
-      <img src="assets/logo-horizontal.jpg" alt="Illa Estética e Bem-Estar" />
-      <p>Illa Estética e Bem-Estar © 2026</p>
-      <a href="https://www.instagram.com/illa.estetica/" target="_blank" rel="noreferrer">Instagram</a>
+          <p class="section-kicker">Contato e localização</p>
+          <h2>Agende sua avaliação e venha nos visitar.</h2>
+          <p class="contact-copy">
+            Fale com a nossa equipe pelo WhatsApp ou confira a localização do consultório no Centro
+            de Curitiba.
+          </p>
+
+          <div class="contact-cards">
+            <article class="contact-card">
+              <span>Atendimento via WhatsApp</span>
+              <strong>(41) 98508-5010</strong>
+              <a href="https://wa.me/5541985085010" target="_blank" rel="noopener">
+                Chamar no WhatsApp
+              </a>
+            </article>
+
+            <article class="contact-card">
+              <span>Localização</span>
+              <strong>Praça Zacarias, 58 - Sala 102</strong>
+              <p>Centro, Curitiba - PR, 80020-080</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Zacarias%2C%2058%20-%20Sala%20102%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080020-080"
+                target="_blank"
+                rel="noopener"
+              >
+                Abrir no Google Maps
+              </a>
+            </article>
+          </div>
+
+          <div class="footer-nav" aria-label="Navegação do rodapé">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#por-que-escolher">Dra. Karina</a>
+            <a href="#consultorio">Consultório</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://www.instagram.com/dra.karinacichocki/" target="_blank" rel="noopener">
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map" data-reveal>
+          <iframe
+            title="Mapa do Consultório Dra. Karina Cichocki"
+            src="https://www.google.com/maps?q=Pra%C3%A7a%20Zacarias%2C%2058%20-%20Sala%20102%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080020-080&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </footer>
 
-    <script src="script.js?v=motion-hero-1" defer></script>
+    <a class="floating-whatsapp" href="https://wa.me/5541985085010" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      <img src="assets/images/whatsapp-icon.png" alt="" aria-hidden="true" />
+    </a>
+
+    <script src="script.js"></script>
   </body>
 </html>
